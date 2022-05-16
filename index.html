@@ -9,65 +9,6 @@ body {font-family: Verdana, sans-serif;}
 .mySlides {display: none;}
 img {vertical-align: middle;}
 
-/* Slideshow container */
-.slideshow-container {
-  max-width: 800px;
-  max-height: 500px;
-  position: relative;
-  margin: auto;
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-  bottom: 10;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
-}
 .center {
   display: block;
   margin-left: auto;
@@ -75,32 +16,72 @@ img {vertical-align: middle;}
   width: 50%;
 }
 
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
     </style>
 </head>
 <body>
-
-<h1 style="text-align:center;">Ni Studio Us</h1>
-
-<div class="slideshow-container">
-    <div class="mySlides fade">
-        <img src="images/features/overview/feature_overview_set1.png" style="width:100%" class="center">
-<!--        <div class="text">Registration</div>-->
-    </div>
-    <div class="mySlides fade">
-        <img src="images/features/overview/feature_overview_set2.png" style="width:100%" class="center">
-<!--        <div class="text">Notes & Tasks</div>-->
-    </div>
-
-    <div style="text-align:center">
-        <span class="dot"></span>
-        <span class="dot"></span>
-    </div>
-
+<div class="header_class_top" style="text-align: center;>
+    <header>
+        <nav class="header_class_outer">
+            <ul>
+            <span><a href="https://nistudious.github.io/scribble_notes/">
+                    <img height="104" src="images/icon/IC_oldNotesApp.png" width="104">
+                </a></span>
+                <span class="span_header_class_title_row">
+                        <a href="index.html">Scribble Notes</a>
+                    </span>
+                <span class="span_header_class_title_row">
+                        <a>Features</a>
+                    </span>
+                <span class="span_header_class_title_row">
+                        <a>About us</a>
+                    </span>
+                <span class="span_header_class_title_row">
+                        <a>Contact us</a>
+                    </span>
+            </ul>
+        </nav>
+    </header>
 </div>
+
+<div class="row">
+    <div class="column">
+        <h2>Group your Notes into folders</h2>
+        <p>move and manage your contents anytime like how you manage you categorize your files.</p>
+    </div>
+    <div class="column" style="text-align: center;">
+        <img src="images/features/overview/tasks_view.png" height="256">
+    </div>
+</div>
+
+<div class="row">
+    <div class="column">
+        <h2>Choose the right theme and colors for your eyes</h2>
+        <p>You know everyone likes to have an options right, so we
+            present
+            you different theme colors and font styles.</p>
+    </div>
+    <div class="column" style="text-align: center;">
+        <img src="images/features/overview/themes_settings.png" height="256">
+    </div>
+</div>
+
 <p>
-    About our Scribble Notes & Organizer,
-</p>
-<p>
+
 <ul>
     <b>Group similar notes or Tasks into folders</b>
     <p>move and manage your contents anytime like how you manage you categorize
@@ -122,7 +103,7 @@ img {vertical-align: middle;}
     screens or just login screen.
 </ul>
 <ul>
-    <b>Organize your tasks with our powerful glance view</b> - to know what is completed and what is not (graph view).
+    <b>Status over a glance view</b> - to know what is completed and what is not (graph view).
 </ul>
 <ul>
     <b>Add images</b> - Why not attaching images from the Gallery (or) Camera to support the content you have it in the
@@ -131,9 +112,19 @@ img {vertical-align: middle;}
 
 </ul>
 </p>
-<p style="text-align:center;">Ni Studio Us is welcoming you to you new app Scribble Notes. Please find our <a
-        href="aboutUs/scribble_notes_privacy_policy.html">Privacy policy</a> and <a
-        href="aboutUs/scribble_notes_terms_and_conditions.html">Terms and conditions</a> documents.</p>
+<div style="text-align:center;">
+    <p style="text-align:center;">We're pleased as you chose to install Scribble Notes. Please find our <a
+            href="aboutUs/scribble_notes_privacy_policy.html">Privacy policy</a> and <a
+            href="aboutUs/scribble_notes_terms_and_conditions.html">Terms and conditions</a> documents.</p>
+
+    <div class="row">
+        <div class="column">
+            <span><p><a href="aboutUs/scribble_notes_privacy_policy.html">Privacy Policy</a></p></span>
+            <span><p><a href="aboutUs/scribble_notes_terms_and_conditions.html">Terms and conditions</a></p></span>
+            <span><p><a href="features/scribble_notes_features.html">Features</a></p></span>
+        </div>
+    </div>
+</div>
 
 <script>
 let slideIndex = 0;
@@ -155,6 +146,11 @@ function showSlides() {
   dots[slideIndex-1].className += " active";
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
+
+
+
+
+
 
 </script>
 
