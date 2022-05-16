@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Scribble Notes by NiStudioUs</title>
 
     <style>
@@ -17,11 +19,29 @@ img {vertical-align: middle;}
 }
 
 /* Create two equal columns that floats next to each other */
-.column {
+
+.column-66 {
+  float: left;
+  width: 66.66666%;
+  padding: 20px;
+}
+
+.column-50 {
   float: left;
   width: 50%;
-  padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
+  padding: 20px;
+}
+
+.column-33 {
+  float: left;
+  width: 33.33333%;
+  padding: 20px;
+}
+
+.column-25 {
+  float: left;
+  width: 25%;
+  padding: 20px;
 }
 
 /* Clear floats after the columns */
@@ -31,15 +51,63 @@ img {vertical-align: middle;}
   clear: both;
 }
 
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+.card_title {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.textLeft{text-align:left!important}
+
+.img_src_bottom {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    display: block;
+}
+
+.div_header_bar {
+background-color: white;
+}
+
+.span_header_class_title_row {
+margin-left: 8px;
+    margin-right: 8px;
+}
+
+@media screen and (max-width: 1000px) {
+  .column-66, .column-50,
+  .column-33 {
+    width: 100%;
+    text-align: center;
+    overflow-x: scroll;
+  }.column-25 {
+    width: 100%;
+    text-align: center;
+  }
+  img {
+    margin: auto;
+  }
+}
+
     </style>
 </head>
 <body>
-<div class="header_class_top" style="text-align: center;">
-    <header>
+
+<div class="card_title">
+<div class="row">
+<div class="div_header_bar" style="text-align: center;">
         <nav class="header_class_outer">
-            <ul>
-            <span><a href="https://nistudious.github.io/scribble_notes/">
-                    <img height="104" src="images/icon/IC_oldNotesApp.png" width="104">
+            <span class="span_header_class_title_row"><a href="index.html">
+                    <img height="48" src="images/icon/IC_oldNotesApp.png" width="48">
                 </a></span>
                 <span class="span_header_class_title_row">
                         <a href="index.html">Scribble Notes</a>
@@ -48,111 +116,131 @@ img {vertical-align: middle;}
                         <a href="features/scribble_notes_features.html">Features</a>
                     </span>
                 <span class="span_header_class_title_row">
-                        <a>About us</a>
+                        <a href="mailto:ni.studio.us@outlook.com">Contact us</a>
                     </span>
-                <span class="span_header_class_title_row">
-                        <a>Contact us</a>
-                    </span>
-            </ul>
         </nav>
-    </header>
-</div>
-
-<div class="row">
-    <div class="column">
-        <h2>Group your Notes into folders</h2>
-        <p>move and manage your contents anytime like how you manage you categorize your files.</p>
     </div>
-    <div class="column" style="text-align: center;">
-        <img src="images/features/overview/tasks_view.png" height="256">
     </div>
-</div>
-
-<div class="row">
-    <div class="column">
-        <h2>Choose the right theme and colors for your eyes</h2>
-        <p>You know everyone likes to have an options right, so we
-            present
-            you different theme colors and font styles.</p>
     </div>
-    <div class="column" style="text-align: center;">
-        <img src="images/features/overview/themes_settings.png" height="256">
-    </div>
-</div>
 
-<p>
-
-<ul>
-    <b>Group similar notes or Tasks into folders</b>
-    <p>move and manage your contents anytime like how you manage you categorize
-        your files.</p>
-</ul>
-<ul>
-    <b>Skip (or) Secure Passcode</b> - Decide how do you want to access the stored notes and tasks with either 6 digit
-    passcode
-    or skip passcode and login directly.
-</ul>
-<ul>
-    <b>Choose the right theme and colors for your eyes</b> - You know everyone likes to have an options right, so we
-    present
-    you different theme colors and font styles.
-</ul>
-<ul>
-    <b>Choose your background</b> - Who doesn't like to set their own photo as wallpaper and you can choose to display
-    on all
-    screens or just login screen.
-</ul>
-<ul>
-    <b>Status over a glance view</b> - to know what is completed and what is not (graph view).
-</ul>
-<ul>
-    <b>Add images</b> - Why not attaching images from the Gallery (or) Camera to support the content you have it in the
-    notes
-    as a reference [you can either approve the permission or reject].
-
-</ul>
-</p>
-<div style="text-align:center;">
-    <p style="text-align:center;">We're pleased as you chose to install Scribble Notes. Please find our <a
-            href="aboutUs/scribble_notes_privacy_policy.html">Privacy policy</a> and <a
-            href="aboutUs/scribble_notes_terms_and_conditions.html">Terms and conditions</a> documents.</p>
-
+<div class="card">
     <div class="row">
-        <div class="column">
-            <span><p><a href="aboutUs/scribble_notes_privacy_policy.html">Privacy Policy</a></p></span>
-            <span><p><a href="aboutUs/scribble_notes_terms_and_conditions.html">Terms and conditions</a></p></span>
-            <span><p><a href="features/scribble_notes_features.html">Features</a></p></span>
+        <h2>We value your Privacy</h2>
+        <p>This purely depends on your choice to give us access to provide the best features to you like the one
+            below.</p>
+
+        <div class="column-50">
+            <div class="card">
+                <div class="row">
+                    <div class="column-50">
+                        <div class="textLeft">
+                            <p>
+                            <h3> Profile Information </h3>
+                            Make use of our backup and restore option. We store the Google sign-in information in a
+                            secured location
+                            along with your username, email address and profile photo. <br>At a glance you should be
+                            able to know which account of users is being signed in with our app,
+                            So we display above-mentioned email,
+                            profile photo in Settings screen in Profile section <i>(refer picture from right-hand
+                            side)</i>
+                            <br>click here to know more about how do you benefit from using
+                            <a href="features/scribble_notes_backup_and_restore.html">service</a>
+                            </p></div>
+                    </div>
+                    <div class="column-25" style="text-align: center;">
+                        <img class="img_src_bottom" src="images/features/overview/profile_information.png" height="256">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="column-50">
+            <div class="card">
+        <div class="row">
+                <div class="textLeft">
+                    <p>
+                    <h3> Opt-in </h3>
+                    Anytime, when you Sign with Google, we display your name, email id along with your photo to let you
+                    know which account you signed in. We utilize the sign in information to bridge our app to your
+                    Google Drive account's app data space, which you can upload and download your data.
+                    <br>If you want to delete and revoke access by following
+                    the
+                    steps explained <a href="features/scribble_notes_manage_access.html">here</a>
+                    </p>
+                </div>
+            </div>
+                </div>
+            </div>
+        <div class="column-50">
+            <div class="card">
+                <div class="row">
+                    <div class="column-50">
+                        <div class="textLeft">
+                            <p>
+                            <h3> Opt-out </h3>
+                            Anytime, when you feel like you have to opt-out from using our Backup and Restore (sync)
+                            service,
+                            <br>you're free to do by logout button and confirm in the alert dialog.
+                            <br>By opt-out your sign-in data from our app will be deleted but the data you backed up to
+                            your Google Drive will stay as it is. If you want to delete and revoke access by following
+                            the
+                            steps explained <a href="features/scribble_notes_manage_access.html">here</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="column-25" style="text-align: center;">
+                        <img class="img_src_bottom" src="images/features/overview/logout.png" height="256">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 
-<script>
-let slideIndex = 0;
-showSlides();
+<div class="row">
+    <div class="column-33" style="text-align: center;">
+        <img src="images/features/overview/tasks_view.png" height="256">
+    </div>
+    <div class="textLeft">
+    <div class="column-66">
+        <h2>Group your Notes into folders</h2>
+        <p>move and manage your contents anytime like how you manage you categorize your files. As and when you use our
+            app you may ends-up with chunks of notes which becomes complex to manage, so we introduce the folders, yes you read right.
+            You can create folders and create or move notes to the same. What else can you do, if the folder is temporary,
+            you can just delete it.</p>
+    </div>
+    </div>
+</div>
 
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
+<div class="card">
+    <div class="row">
+        <div class="column-66">
+            <div class="textLeft">
+                <h2>Choose the right theme and colors for your eyes</h2>
+                <p>You know everyone likes to have an options right, so we have a present for you
+                    different theme colors with multiple font styles. There are more features are on the way,
+                    one among them is I can reveal which is you can choose your picture or favourite picture as
+                    background
+                    across screens. Yes you heard right, scroll down to know more.</p>
+            </div>
+        </div>
+        <div class="column-33" style="text-align: center;">
+            <img src="images/features/overview/themes_settings.png" height="256">
+        </div>
+
+    </div>
+</div>
 
 
-
-
-
-
-</script>
+<div class="bottom_navigation" style="text-align:center;">
+    <p>We're thankful and happy as you're using Scribble Notes. Let us know what is
+        best and what needs to be improved <a href="mailto:ni.studio.us@outlook.com">contact us</a></p>
+    <div class="row" style="text-align:center;">
+            <a href="aboutUs/scribble_notes_privacy_policy.html">Privacy Policy</a>
+            <a href="aboutUs/scribble_notes_terms_and_conditions.html">Terms and conditions</a>
+            <a href="features/scribble_notes_features.html">Features</a>
+    </div>
+</div>
 
 </body>
 
